@@ -62,7 +62,9 @@
 @media only screen (min-width: 600px) {
    .body {
         
-      padding: 16px
+       padding: 100px;
+       flex-direction: column;
+       flex: wrap;
        
 
 

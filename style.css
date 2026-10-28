@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-h1,p, ul {
+h1,h2, p, ul {
   margin: 0;
   padding: 0;
 }
@@ -51,7 +51,7 @@ h1,p, ul {
 
 /* Main Hero Section Styles */
 .hero {
-  background-image: url("./Skyline34.jpg");
+  background-image: url("./Skyline123.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -60,6 +60,16 @@ h1,p, ul {
   align-items: flex;
   justify-content: start;
   background-color: white;
+  &:before {
+    content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right,#002f4b,#9c9594);
+        opacity: .6; 
+  }
 }
 
 .hero .intro {
@@ -74,6 +84,11 @@ h1,p, ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+
 }
 
 /* About section styles */
@@ -95,13 +110,14 @@ h1,p, ul {
  .about-image img {
   height: 600px;
   width: 450px;
+  margin: 0.3rem;
 
 }
 
 /* Portfolio section styles */
 .portfolio {
-  margin: 4.8rem 0;
-  padding: 0 5rem;
+  
+  padding: 2rem 5rem 5rem;
   background-color: rgb(255, 255, 255);
 }
 
@@ -122,6 +138,11 @@ h1,p, ul {
   width: 100%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  object-fit: cover;
+}
+
+.card-content{
+  padding: 0.5rem 0 1rem;
 }
 
 /* Services section styles */
@@ -130,8 +151,8 @@ h1,p, ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 4.8rem 0;
-  padding: 0 5rem;
+ 
+  padding: 2rem 5rem 5rem;
 }
 
 .my-row {
@@ -179,13 +200,14 @@ h1,p, ul {
 
 /* Contact section styles */
 .contact {
-  padding: 0 5rem;
+  padding: 2rem 5rem 5rem;
 }
 
 .contact-content {
   display: flex;
   margin: 3rem 0;
   justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
 .contact-form-container {
@@ -207,7 +229,7 @@ h1,p, ul {
 }
 
 .contact-form .form-btn {
-  width: 83%;
+ 
 }
 
 .contact-details {
@@ -273,7 +295,7 @@ h1,p, ul {
 .my-heading {
   font-size: 2.5rem;
   font-family: Cinzel, serif;
-  margin: 0;
+  margin: 2rem;
   color: rgb(0, 0, 0);
 }
 
@@ -437,13 +459,14 @@ h1,p, ul {
     row-gap: 1rem;
     grid-template-columns: auto;
     display: grid;
+    margin: 0;
   }
   .my-row {
     grid-template-columns: auto;
   }
   .about {
     flex-direction: column-reverse;
-    padding: 3.3rem;
+    padding: 2rem 0;
    
   }
   .about-image img {

@@ -18,8 +18,8 @@ h1,h2, p, ul {
   background-color: transparent;
 }
 .logo{
-    height: 8rem;
-    border-radius: 22px;
+    height: 14rem;
+    ;
     
 }
 
@@ -43,10 +43,11 @@ h1,h2, p, ul {
   display: flex;
   list-style: none;
   gap: 59px;
+  margin: 0 -53px 43px;
 }
 
 .menu-list .menu-list-items {
-  padding: 0.5rem 1rem;
+
 }
 
 /* Main Hero Section Styles */
@@ -60,16 +61,7 @@ h1,h2, p, ul {
   align-items: flex;
   justify-content: start;
   background-color: white;
-  &:before {
-    content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: linear-gradient(to bottom right,#002f4b,#9c9594);
-        opacity: .6; 
-  }
+ 
 }
 
 .hero .intro {
@@ -301,7 +293,7 @@ h1,h2, p, ul {
 
 .sub-heading {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 18px;
   color: #ffffff;
   font-weight: lighter;
 }
@@ -391,20 +383,9 @@ h1,h2, p, ul {
 .hero .greet-heading {
   color: #ffffff;
   font-family: "Sofia", sans-serif;
-  text-shadow:
-    0px 0px 10px cyan,
-    0px 0px 20px cyan,
-    0px 0px 40px cyan,
-    0px 0px 80px cyan;
 }
 .hero .my-heading {
-  color: transparent;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #00ffdd 40%,
-    #ff0404 100%
-  );
+  color: white;
   -webkit-background-clip: text;
 }
 .intro-buttons .button {
@@ -484,7 +465,7 @@ h1,h2, p, ul {
     padding-top: 9px;
   }
   .logo{
-    height: 100px;
+    height: 8rem;
 
   }
   .greet-heading {
